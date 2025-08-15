@@ -1,0 +1,824 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=IBM+Plex+Sans:ital,wght@0,100;0,200;1,300&family=Oswald:wght@400;500;700&family=Pacifico&family=Raleway&family=Rubik+Doodle+Shadow&family=Ubuntu:wght@300;400&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+body{
+  overflow-x: hidden;
+  background: #111;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #10eed8; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 20px;
+  color: #0eedb1;
+  font-family: 'Dancing Script', cursive;
+  float: left; 
+  text-shadow: 2px 2px 2px   #0eedb1, 0 0 25px #10eed8, 0 0 5px;
+
+}
+.logo:hover {
+    animation: bounce 1s infinite; 
+      transition: color 0.5s ease;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    70% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .header{
+    min-height:100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/img1.jpg);
+    background-position: center;
+    background-size:cover ;
+    position: relative;
+}
+nav{
+  display: flex;
+  justify-items: center;
+  overflow: hidden;
+  background-color: #078e66;
+  position: fixed;
+  width: 100%;
+  opacity: 1;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link{
+    flex: 1;
+    text-align: center;
+    display:flex;
+     align-items: center;
+}
+.nav-link a{
+  color: #fff3f3;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  margin: 1rem;
+ font-weight: bold;
+  font-size: 2rem;
+ }
+.nav-link a:hover{
+  background-color: rgb(92, 180, 92);
+  padding-bottom : 1rem
+  
+}
+.nav-link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.nav-link ul li a{
+  color:#fff;
+  text-decoration: none;
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nav-link ul li::after {
+  content: '';
+  width: 0%;
+ display: block;
+  margin: auto;
+  transition: 0.5s;
+  width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.nav-link ul li:hover::after {
+  width: 100%;
+  font-weight: bold;
+  display: block;
+  font-size: 150%;
+  background-color: #fff;
+  width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+}
+
+/*acceuil*/
+
+#text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  #text-box h1{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-style: oblique;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold ;
+   color: #3498db; 
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 50px;
+  transition: color 0.5s ease; 
+}
+/* Effet de survol */
+#text-box h1:hover {
+  color: #12ca5f;
+}
+#text-box p{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+  padding-bottom: auto; 
+  text-shadow: #7886c4;
+  }
+  #text-box p:hover {
+    color: #7886c5;
+  }
+  #text-box .hero-btn{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border:1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  #text-box .hero-btn:hover{
+    border: 1px solid #0d5607;
+    background: #0d5607;
+    transition: 1s;
+  }
+  nav .fa{
+    display: none;
+  }
+
+
+  /*
+  <nutrition> CSS.
+*/
+ #nutrition{
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px; 
+    padding: 2px 2%; 
+    background-color: #f1f2f8;
+  }
+  #nutrition  h1{
+    font-family: Tahoma, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+    margin: 15px;
+    text-shadow: 2px 2px 2px darkcyan, 0 0 25px #1af492, 0 0 5px darkseagreen;
+  }
+  
+  #nutrition .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    display: -ms-grid;
+    -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+  }
+  #nutrition  .recette{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; 
+    overflow: hidden;
+  }
+  #nutrition .recette h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #111;
+    margin-top: .5rem;
+    font-size: 2rem;
+  }
+  #nutrition .recette p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 1rem 0;
+    line-height: 2;
+  }
+  #nutrition  .recette:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #nutrition .recette img {
+    width: 100%;
+    height: auto;
+    border: 1px solid ;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    animation: mymove 5s infinite;
+  animation-timing-function: linear;
+  }
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+  #nutrition .recette img :hover{
+    transform: scaleX(-1);
+  }
+  #nutrition  .recette  a {
+    font-size: 2rem;
+    color: #29d949a5;
+  }
+  #nutrition .recette a:hover i {
+    padding-left: 1rem;
+  }
+  #nutrition  .recette  a i {
+    padding-right: .5rem;
+  }
+  @media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+  }
+  
+/*
+  conseil nutrition CSS.
+*/
+  .conseils{
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    height: max-content;
+    padding: 2px 2%; 
+    background-color: #f1f2f8;
+}
+.conseils-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.conseils  h1{
+  font-family: 'Brush Script MT', cursive;
+  font-style: italic;
+  font-size: 50px;
+  text-align: center;
+  margin: 15px;
+  text-shadow: 2px 2px 2px rgb(23, 243, 243), 0 0 25px #89f4c4, 0 0 5px;
+}
+.conseils-col img{
+    width:100%;
+    border-radius: 10px;
+  box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+}
+.conseils-col img:hover {
+  opacity: 0.5;
+  transform: scale(1.05);
+  transition: 0.6s ease-in-out;
+}
+
+.conseils-col p{
+  font-family: 'Courier New', monospace;
+    padding: 0;
+    text-align: justify;
+    color: #312e2e;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 2;
+}
+.conseils-col h3{
+  font-family: Tahoma, Verdana, sans-serif;
+   margin-top: 18px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: 800;
+    margin: 10px 0;
+    color: #111;
+    font-size: 2rem;
+}
+
+/*
+  Planification CSS.
+*/
+.Planification{
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+  height: max-content;
+  padding: 2px 2%; 
+  background-color: #f1f2f8;
+}
+.Planification h1{
+  font: italic small-caps bold  Georgia, serif;
+ font-style: italic;
+  font-size: 50px;
+  text-align: center;
+  margin: 15px;
+  text-decoration-style: dotted;  
+  text-shadow: 2px 2px 2px DodgerBlue, 0 0 25px powderblue, 0 0 5px;
+}
+
+.carousel-inner img {
+  width: 100%!important;
+  height: 300px;
+}
+
+.carousel-inner h4 {
+  font-size: 30px;
+  font-family: "Trirong", serif;
+  font-style: oblique;
+  font-weight: bold ;
+  color: darkblue;
+text-align: center;
+}
+
+.carousel-inner p {
+  font-size: 18px;
+  font-family:Arial, Helvetica, sans-serif;
+   font-style: oblique;
+  font-weight: bolder;
+  color: #fff3f3;
+text-align: center;
+}
+
+
+
+/*
+  articles  CSS.
+*/
+.Articles{
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+  height: max-content;
+  padding: 2px 2%; 
+  background-color: #f1f2f8;
+}
+
+.Articles h1 {
+ font-style: italic;
+ font-weight: bold;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  margin: 15px;
+  text-decoration-style: dotted;  
+  color: rgb(111, 209, 222);
+  text-shadow: 4px 4px 4px DodgerBlue, 0 0 25px powderblue, 0 0 5px;
+
+}
+.Articles h1:hover {
+  color: rgb(134, 217, 134);
+}
+
+.menu{
+  width: 100%;
+  padding: 100px 0;
+}
+
+.menu h1{
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.menu h1 span{
+  color: #fac031;
+  margin-left: 15px;
+  font-family: mv boli;
+}
+
+.menu h1 span::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.menu .menu_box{
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.menu .menu_box .menu_card{
+  width: 300px;
+  height: 480px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.menu .menu_box .menu_card .menu_image{
+  width: 300px;
+  height: 245px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.menu .menu_box .menu_card .menu_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+.menu .menu_box .menu_card .menu_image:hover img{
+  transform: scale(1.1);
+}
+
+.menu .menu_box .menu_card .small_card{
+  width: 45px;
+  height: 45px;
+  float: right;
+  position: relative;
+  top: -240px;
+  right: -8px;
+  opacity: 0;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+
+.menu .menu_box .menu_card:hover .small_card{
+  position: relative;
+  top: -240px;
+  right: 20px;
+  opacity: 1;
+}
+
+.menu .menu_box .menu_card .small_card i{
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 50px;
+  color: #000;
+  cursor: pointer;
+  text-shadow: 0 0 6px #000;
+  transition: 0.2s;
+}
+
+.menu .menu_box .menu_card .small_card i:hover{
+  color: #ce2609;
+}
+
+.menu .menu_box .menu_card .menu_info h2{
+  text-align: center;
+  font-size: 18px;
+  color: #7886c4;
+}
+
+.menu .menu_box .menu_card .menu_info p{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  line-height: 16px;
+  font-weight: lighter;
+  font-style: oblique;
+}
+
+
+.menu .menu_box .menu_card .menu_info .menu_icon{
+  color: #fac031;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background: #000;
+  padding: 8px 10px;
+  margin: 0 80px;
+  transition: 0.3s;
+}
+
+/*
+  Témoignages CSS.
+*/
+.Témoignages{
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+   width: 100%;
+    height: max-content;
+    padding: 6px 6%; 
+    background-color: #f1f2f8;
+}
+.Témoignages h1{
+  font-family: myFirstFont;
+  font-weight: bold;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 50px;
+  text-align: center;
+  margin: 15px;
+  text-decoration-style: dotted;  
+  text-shadow: 2px 2px 2px DodgerBlue, 0 0 25px powderblue, 0 0 5px;
+  white-space: nowrap; 
+overflow: hidden; 
+}
+.Témoignages h1:hover {
+overflow: visible;
+}
+.Témoignages-col{
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.Témoignages-col img{
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.Témoignages-col p{
+  padding: 0;
+}
+.Témoignages-col h3{
+  margin-top: 15px;
+  text-align: left;
+}
+.Témoignages-col .fa{
+  color: #f44336;
+}
+@media (max-width: 700px) {
+  .Témoignages-col img{
+       margin-left: 0px;
+      margin-right: 15px;   
+  }   
+}
+
+
+/*
+  contact  CSS.
+*/
+.contact{
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+   width: 100%;
+    height: max-content;
+    padding: 6px 6%; 
+    background-color: #f1f2f8;
+}
+
+.contact h1{
+  font-family: myFirstFont;
+  font-weight: bold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  margin: 15px;
+  text-decoration-style: dotted;  
+  text-shadow: 2px 2px 2px rgb(132, 178, 224), 0 0 25px , 0 0 5px;
+  white-space: nowrap; 
+overflow: hidden; 
+color: #10eed8;
+}
+
+
+.contact-col{
+  flex-basis: 48%;
+  margin-bottom: 30px ;
+}
+.contact-col div{
+  display: flex;
+  align-items:justify;
+  margin-bottom: 40px ;
+}
+
+
+.contact-col div .fa{
+  font-size: 28px;
+  color: #599f5afe;
+  margin: 10px;
+  margin-right: 30px ;
+}
+.contact-col div p{
+  padding: 0;
+  font-size: 20px;
+}
+.contact-col div h5{
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 5px ;
+  font-weight: 400;
+}
+.contact-col div .fa:hover  {
+  color: #1ed7c5;
+}
+.contact-col form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  transition: 0.5s;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.4);
+}
+.contact-col form:hover {
+  background-color: #09b14f;
+  font-weight: bolder;
+
+}
+.contact-col label {
+  padding: 5px 0;
+  text-align: justify;
+  font: size 12px; ;
+  font-weight: bolder;
+
+}
+.contact-col form:hover label {
+  color: #fff;
+  font-weight: bolder;
+
+}
+
+
+.contact-col input, .contact-col textarea{
+  padding: 5px;
+    outline: 0;
+    border-radius: 6px;
+    border: 2px solid #09b14f;   
+    font-weight: bolder;
+ 
+}
+.contact-col textarea {
+  margin-bottom: 10px;
+  resize: none;
+}
+.contact-col input[type="submit"]{
+  font-weight: bolder;
+  background-color:#09b14f;
+  color: #fff;
+  border: 40px solid #fff;
+  cursor: pointer;
+  
+}
+.contact-col input[type="submit"]:hover {
+  border: 40px solid #5aca81;
+  font-weight: bolder;
+
+}
+.btn btn-success {
+  font-weight: bolder;
+   font-size: 12px;
+}
+
+
+/*--Footer--*/
+/*--Footer--*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: #59c1a2;
+  text-transform: uppercase;
+}
+
+.footer p {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 23px;
+  color: blueviolet;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 2px   #0eedb1, 0 0 25px #10eed8, 0 0 5px;
+
+}
+
+.footer .text-body {
+  color: white;
+  text-decoration: none;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  transition: color 0.3s ease;
+
+}
+
+.footer .text-body:hover {
+  color: #4fc3af;
+  text-decoration: underline;
+  background-color: rgb(92, 180, 92);
+  padding-bottom : 1rem;
+  font-weight: bold;
+}
+
+.icons a {
+  font-size: 24px;
+  width: 47px;
+  height: 47px;
+  background: #4fc3af;
+  color: white;
+  padding: 12px 14px;
+  border-radius: 50%;
+  margin: 2px;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.3s ease;
+  
+}
+
+.icons a:hover {
+  background: rgb(31, 49, 136);
+  color: #4fc3af;
+  
+}
+
+
