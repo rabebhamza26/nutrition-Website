@@ -27,5 +27,3 @@ Ce projet permet d’explorer des recettes saines, de bénéficier de conseils n
 - **Backend** : PHP  
 - **Base de données (optionnelle)** : MySQL  
 
-   ```bash
-   git clone https://github.com/ton-utilisateur/nom-du-repo.git
